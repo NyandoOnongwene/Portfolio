@@ -45,7 +45,7 @@ return (
 
 <h4>LinkedIn</h4>
 <h5>Profile</h5>
-<a href='https://www.linkedin.com/in/nyando-onongwene-321210228' rel=''
+<a href='https://www.linkedin.com/in/nyando-onongwene-321210228/' rel=''
 target='_blank' >Tap me on LinkedIn</a>
 </article>
 <article className='contact__option'>

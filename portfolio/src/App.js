@@ -34,6 +34,7 @@ return (
   <Contact />
   <Footer />
 </div>
+
 );
 }
 export default App; 
