@@ -15,24 +15,32 @@ const Experience = () => {
           </h3>
           <div className="experience__container">
             <article className='experience__details'>
-              <BsPatchCheckFill />
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
               <h4>HTML</h4>
               <small className='text-light'>Experienced</small>
+              </div>
             </article>
              <article className='experience__details'>
-              <BsPatchCheckFill />
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
               <h4>CSS</h4>
               <small className='text-light'>Intermediate</small>
+              </div>
             </article>
              <article className='experience__details'>
-              <BsPatchCheckFill />
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
               <h4>JavaScript</h4>
               <small className='text-light'>Experienced</small>
+              </div>
             </article>
              <article className='experience__details'>
               <BsPatchCheckFill />
+              <div>
               <h4>React</h4>
               <small className='text-light'>Experienced</small>
+              </div>
             </article>
           </div>
         </div>
@@ -45,18 +53,24 @@ const Experience = () => {
            <div className="experience__container">
             <article className='experience__details'>
               <BsPatchCheckFill />
+              <div>
               <h4>Node JS</h4>
               <small className='text-light'>Experienced</small>
+              </div>
             </article>
              <article className='experience__details'>
               <BsPatchCheckFill />
+              <div>
               <h4>MongoDB</h4>
               <small className='text-light'>Intermediate</small>
+              </div>
             </article>
              <article className='experience__details'>
               <BsPatchCheckFill />
+              <div>
               <h4>MySQL</h4>
               <small className='text-light'>Basic</small>
+              </div>
             </article>
             
            </div>
