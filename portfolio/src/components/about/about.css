@@ -1,5 +1,5 @@
-/* 
-* {
+
+/* * {
     border: 1px solid red;
 } */
 .about__container{
@@ -67,6 +67,12 @@
 
 }
 
+.card{
+    display: grid;
+    grid-template-columns: repeat(3);
+    gap: 1.5rem;
+}
+
 .about__card small {
     font-size: 0.7rem;
     color: var(--color-light);
@@ -76,6 +82,10 @@
 .about__content{
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+}
+
+.text{
+    padding: 25px 25px 25px 0px;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */

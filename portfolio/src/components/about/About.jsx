@@ -20,34 +20,36 @@ const About = () => {
 
     <div className="about__content">
       <div className="about__cards">
+        <div className="card">
         <article className='about__card'>
           <FaAward className='about__icon'/>
           <h5>Experience</h5>
           <small>2+ Years Working</small>
         </article>
-
+        </div>
+        <div className="card">
          <article className='about__card'>
           <FiUsers className='about__icon'/>
           <h5>Clients</h5>
           <small>10+ Worldwide</small>
         </article>
-
+        </div>
+        <div className="card">
          <article className='about__card'>
           <VscFolderLibrary className='about__icon'/>
           <h5>Projects</h5>
           <small>20+ Completed Projects</small>
         </article>
-         
+         </div>
       </div>
       
-      <div>
+      <div className='text'>
       <p>
-        Hi there viewer.My name is Nyando Onongwene. I'm a computer engineering student at the Faculty of
-       Engineering and Technology, University of Buea.
+        Hi there. My name is Nyando Onongwene. I'm a computer engineering student at the 
+        Faculty of Engineering and Technology, University of Buea.
        Thanks for visiting my profile.
-       I'm also a ui/ux designer. And an aspiring Frontend developer. I'm working on gaining more skills.
-       And also getting internships on this journey. Especially tech inclined to help me in my field and I wish to achieve
-       academic excellence and also be very successful at my job site.
+       I'm a ui/ux designer. I'm working on gaining more skills.
+       And also getting internships on this journey
        Thank you
       </p>
       </div>
