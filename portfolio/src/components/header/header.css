@@ -40,7 +40,7 @@ after the social icons*/
 .my_image {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
-    Height: 35rem;
+    Height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
     /*this help to place the image to the middle of screen*/
@@ -61,12 +61,15 @@ after the social icons*/
 
 /*This is what we call media query: here we define the css that will be apply for a
 specific screen*/
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and(max-width:1024px) {
     header {
         height: 68vh
     }
 }
 
+/* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and(max-width:600px) {
     header {
         height: 100vh

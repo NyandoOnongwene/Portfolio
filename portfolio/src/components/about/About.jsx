@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import me1 from '../../assets/me1.jpeg'
+import me1 from '../../assets/me1.png'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
@@ -14,18 +14,18 @@ const About = () => {
    <div className="container about__container">
     <div className="about__me">
       <div className="about__me-image">
-        <img src={me1} alt="About Image" />
+        <img src={me1}  alt="About Image" />
       </div>
-
     </div>
+
     <div className="about__content">
       <div className="about__cards">
         <article className='about__card'>
           <FaAward className='about__icon'/>
           <h5>Experience</h5>
           <small>2+ Years Working</small>
-
         </article>
+
          <article className='about__card'>
           <FiUsers className='about__icon'/>
           <h5>Clients</h5>
@@ -39,15 +39,20 @@ const About = () => {
         </article>
          
       </div>
-
+      
+      <div>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Doloribus voluptatum quibusdam commodi. 
-        Accusantium, vel fugiat ipsa fuga itaque quis magni excepturi id, 
-        cumque culpa animi inventore, a voluptatum commodi labore.
+        Hi there viewer.My name is Nyando Onongwene. I'm a computer engineering student at the Faculty of
+       Engineering and Technology, University of Buea.
+       Thanks for visiting my profile.
+       I'm also a ui/ux designer. And an aspiring Frontend developer. I'm working on gaining more skills.
+       And also getting internships on this journey. Especially tech inclined to help me in my field and I wish to achieve
+       academic excellence and also be very successful at my job site.
+       Thank you
       </p>
-        <a href="#contact" className='btn btn-primary'>Let's talk</a>
-    </div>
+      </div>
+      <a href="#contact" className='btn btn-primary'>Let's talk</a>
+     </div>
    </div>
    </section>
   )
