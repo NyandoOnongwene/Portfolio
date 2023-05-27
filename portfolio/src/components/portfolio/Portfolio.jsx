@@ -1,7 +1,9 @@
 import React from 'react'
-
-export default function Portfolio() {
+import './portfolio.css'
+const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <section id='portfolio'>Portfolio</section>
   )
 }
+
+export default Portfolio

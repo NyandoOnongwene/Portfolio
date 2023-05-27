@@ -1,16 +1,4 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 /* used of google fonts */
  * {
@@ -53,11 +41,13 @@ code {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
+    background-image: url(../src/assets/bg-texture.png);
   }
 
+  /* ========= GENERAL STYLES ======== */
   .container {
     width: var(--container-width-lg);
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   h1, h2, h3, h4, h5 {
@@ -70,6 +60,7 @@ code {
 
   section {
     margin-top: 8rem;
+    height: 100vh;
   }
 
   section > h2,
@@ -123,6 +114,8 @@ code {
     width: 100%;
     object-fit: cover;
   }
+
+  /* MEDIA QUERIES */
 
   @media screen and (max-width:1024px) {
     .container {
