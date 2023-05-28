@@ -27,7 +27,7 @@ const Portfolio = () => {
 
          <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={Portfolio2} alt="Shopping Website" />
+            <img src={LMS} alt="Library System" />
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://githup.com" className='btn'>Github</a>
@@ -54,20 +54,20 @@ const Portfolio = () => {
 
          <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={LMS} alt="Library System" />
+            <img src={cats} alt="A cat pet website" />
+          </div>
+          <h3>This is a portfolio item title</h3>
+          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter" className='btn'>Github</a>
+          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter/" className='btn btn-primary' target='_blank'>Live Demo</a>
+         </article>
+
+         <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={Portfolio2} alt="Shopping Website" />
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://githup.com" className='btn'>Github</a>
           <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank'>Live Demo</a>
-         </article>
-
-          <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={solar} alt="Solar System" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/SimpleSolarSystem" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/SimpleSolarSystem" className='btn btn-primary' target='_blank'>Live Demo</a>
          </article>
 
           <article className='portfolio__item'>
@@ -90,11 +90,11 @@ const Portfolio = () => {
 
          <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={cats} alt="A cat pet website" />
+            <img src={solar} alt="Solar System" />
           </div>
           <h3>This is a portfolio item title</h3>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/SimpleSolarSystem" className='btn'>Github</a>
+          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/SimpleSolarSystem" className='btn btn-primary' target='_blank'>Live Demo</a>
          </article>
         
       </div>
