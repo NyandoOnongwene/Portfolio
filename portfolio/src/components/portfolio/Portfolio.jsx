@@ -22,7 +22,7 @@ const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
          </article>
 
          <article className='portfolio__item'>
@@ -31,7 +31,7 @@ const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
          </article>
 
          <article className='portfolio__item'>
@@ -40,7 +40,7 @@ const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
          </article>
 
          <article className='portfolio__item'>
@@ -49,7 +49,7 @@ const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
          </article>
 
          <article className='portfolio__item'>
@@ -58,7 +58,7 @@ const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
          </article>
 
          <article className='portfolio__item'>
@@ -67,7 +67,7 @@ const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
          </article>
 
           <article className='portfolio__item'>
@@ -76,7 +76,7 @@ const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
          </article>
 
          <article className='portfolio__item'>
@@ -85,7 +85,7 @@ const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/Basketball" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/Basketball" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/Basketball" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
          </article>
 
          <article className='portfolio__item'>
@@ -94,7 +94,7 @@ const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
           <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/SimpleSolarSystem" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/SimpleSolarSystem" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/SimpleSolarSystem" className='btn btn-primary' target='_blank' rel="noreferrer" >Live Demo</a>
          </article>
         
       </div>
