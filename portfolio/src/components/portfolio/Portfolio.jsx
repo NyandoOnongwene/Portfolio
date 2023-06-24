@@ -1,107 +1,50 @@
-import React from 'react'
-import './portfolio.css'
-import Portfolio1 from '../../assets/Portfolio1.png'
-import Portfolio2 from '../../assets/Portfolio2.png'
-import Portfolio3 from '../../assets/Portfolio3.png'
-import Portfolio4 from '../../assets/Portfolio4.png'
-import LMS from '../../assets/LMS.png'
-import solar from '../../assets/solar.png'
-import twitter from '../../assets/twitter.png'
-import basketball from '../../assets/basketball.png'
-import cats from '../../assets/cats.png'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import './portfolio.css';
+
 const Portfolio = () => {
+
+    const [data, setData] = useState([]);
+
+    useEffect(()=> {
+        axios.get("https://spotless-cyan-kit.cyclic.app/api/portfolio").then(response => {
+            const formattedData = response.data.data.map(item => ({
+                id:item._id,
+                image: item.image,
+                title: item.title,
+                github: item.github,
+                demo: item.demo
+            }));
+            setData(formattedData)
+        }).catch(error => {
+            console.log("Error fetching portfolio data:", error);
+        })
+    }, [])
+
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
+      <div className='portfolio__container'>
+        {
 
-      <div className="container portfolio__container">
-         <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={Portfolio1} alt="Glassmorphic Bank card" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-         </article>
-
-         <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={LMS} alt="Library System" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-         </article>
-
-         <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={Portfolio3} alt="Clothing Website" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-         </article>
-
-         <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={Portfolio4} alt="Slider" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-         </article>
-
-         <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={cats} alt="A cat pet website" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-         </article>
-
-         <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={Portfolio2} alt="Shopping Website" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://githup.com" className='btn'>Github</a>
-          <a href="https://githup.com/NyandoOnongwene/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-         </article>
-
-          <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={twitter} alt="Twitter home page" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/twitter/" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-         </article>
-
-         <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={basketball} alt="Counts number of baskets for two teams" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/Basketball" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/Basketball" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
-         </article>
-
-         <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={solar} alt="Solar System" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/SimpleSolarSystem" className='btn'>Github</a>
-          <a href="https://github.com/NyandoOnongwene/FRONTEND-2/tree/New-Features/SimpleSolarSystem" className='btn btn-primary' target='_blank' rel="noreferrer" >Live Demo</a>
-         </article>
+        data.map(({ id, image, title, github, demo }) => (
+          <article key={id} className='portfolio__item'>
+            <div className="portfolio__item__image">
+              <img src={image} alt={title} />
+            </div>
+            <h3>{title}</h3>
+            <div className="portfolio__item__cta">
+              <a href={github} className='btn' target='_blank' rel='noopener noreferrer'>Github</a>
+              <a href={demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+            </div>
+          </article>
+        ))
         
+        }
       </div>
-
-       
     </section>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
